@@ -1,0 +1,7 @@
+.page-wraper {
+  display: grid;
+}
+
+#welcome-section {
+  height: 100vh;
+}

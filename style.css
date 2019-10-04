@@ -1,17 +1,11 @@
+body {margin: 0;}
+
 .page-wraper {
-  display: grid;
-}
-
-#welcome-section {
-  height: 100vh;
-}
-
-.page-wrapper {
   display: grid;
   place-items: center;
   padding: 0;
   gap: 30px;
-  padding-top: 100px;
+  width: 100%;
 }
 
 header {
@@ -20,18 +14,28 @@ header {
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   background-color: #333;
   color: white;
   padding: 10px 0;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  padding-right: 8vw;
-  list-style: none;
+nav a {
+  padding: 5vw;
+  color: white;
 }
 
-li {padding-left: 5vw}
+#welcome-section {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background: orange;
+}
+
+#projects {
+  height: 100vh;
+  display: grid;
+}

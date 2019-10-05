@@ -19,11 +19,25 @@ header {
   background-color: #333;
   color: white;
   padding: 10px 0;
+  box-shadow: 0 2px 13px black;
+}
+
+nav {
+  width: 100%;
 }
 
 nav a {
   padding: 5vw;
   color: white;
+}
+
+ul {
+  place-items: center;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 #welcome-section {
@@ -40,5 +54,5 @@ nav a {
   display: grid;
   grid-auto-flow: column;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
 }

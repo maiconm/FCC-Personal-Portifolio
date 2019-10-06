@@ -50,9 +50,11 @@ ul {
 }
 
 #projects {
+  place-items: center;
   height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: column dense;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }

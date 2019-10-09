@@ -57,8 +57,16 @@ nav ul li {padding-bottom: 5px;}
 }
 
 #projects {
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.cards {
+  text-align: center;
   place-content: center;
-  height: 100vh;
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
@@ -67,9 +75,19 @@ nav ul li {padding-bottom: 5px;}
 }
 
 .project-tile {
-  height: 100%;
+  height: 440px;
   width: 100%;
-  border: solid black 5px ;
+  border: solid black 5px;
   display: grid;
   place-items: center;
+  grid-template-rows: 85% auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.project-tile div {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }

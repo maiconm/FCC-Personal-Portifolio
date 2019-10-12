@@ -151,3 +151,10 @@ nav ul li {padding-bottom: 5px;}
   width: 100%;
   place-items: center;
 }
+
+@media only screen and (max-width: 430px) {
+  .project-tile {
+    width: 98%;
+    place-items: center;
+  }
+}

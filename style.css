@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway';
   margin: 0;
+  text-align: center;
 }
 
 .page-wraper {
@@ -8,6 +9,8 @@ body {
   place-items: center;
   padding: 0;
   width: 100%;
+  gap: 7px;
+  background-color: #2a2d2f;
 }
 
 header {
@@ -103,9 +106,10 @@ nav ul li {padding-bottom: 5px;}
 }
 
 .project-tile {
+  background-color: #333;
   height: 440px;
   width: 100%;
-  border: solid black 5px;
+  box-shadow: 2px 2px 5px black;
   display: grid;
   place-items: center;
   grid-template-rows: 85% auto;
@@ -126,24 +130,24 @@ nav ul li {padding-bottom: 5px;}
   height: 110%;
 }
 
-.project-tile a {
-  position: relative;
+#contact-section {
+  height: 100vh;
+  background-color: #333;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 
-.project-tile a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #3cefff;
-  transform-origin: bottom right;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
+#contact-section h1 {
+  font-size: 64px;
+  margin: 0;
+  color: white;
 }
 
-.project-tile a:hover::before {
-  transform-origin: bottom left;
-  transform: scaleX(1);
+#contact-section div {
+  text-shadow: 5px 5px 5px black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  width: 100%;
+  place-items: center;
 }
